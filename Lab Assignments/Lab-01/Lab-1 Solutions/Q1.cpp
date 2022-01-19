@@ -10,21 +10,21 @@ using namespace std;
 
 int main()
 {
-    int arr[100];
-    int i, max, min, size, sum = 0, sum_squares = 0;
 
     // Reads size array and elements in the array
 
     cout << endl
          << "How many numbers you want to enter  ";
+    int size;
     cin >> size;
-    cout << "Okk, Input " << size << " elements now: ";
+    cout <<endl<< "Okk, Input " << size << " elements now: ";
 
+    float arr[100], sum = 0.0;
+    int i, max, min;
     for (i = 0; i < size; i++)
     {
         cin >> arr[i];
         sum = sum + arr[i];
-        // sum_squares = sum_squares + arr[i] * arr[i];
     }
 
     /* Supposes the first element as maximum and minimum */
@@ -34,7 +34,7 @@ int main()
     /*
       Finds maximum and minimum in all elements.
      */
-    for (i = 1; i < size; i++)
+    for (i = 0; i < size; i++)
     {
         /* If current element of array is greater than max */
         if (arr[i] > max)
@@ -49,16 +49,15 @@ int main()
         }
     }
 
-    int range = max - min;
-    float avg = sum / size;
+    float avg;
+    avg = sum / size;
 
     // Prints the maximum , minimum element and average
 
     cout << endl
-         << "Maximum element " << max << endl
-         << "Minimum element " << min << endl
-
-         << "Average " << avg << endl;
+         << "Maximum element: " << max << endl
+         << "Minimum element: " << min << endl
+         << "Average: " << avg << endl;
 
     /*
     Another way to calculate the max,min and range of a list of numbers:

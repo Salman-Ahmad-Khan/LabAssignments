@@ -13,16 +13,22 @@ on the following data:
 
 #include <iostream>
 using namespace std;
-#define SIZE 26 // size of above data collection is 26
+// #define SIZE 26 // size of above data collection is 26
 int main()
 {
 
     cout << endl
+         << "How many temperatures you want to enter: ";
+    int n;
+    cin >> n;
+
+    cout << endl
          << "Input all the Temperatures at once followed by whitespaces:" << endl;
 
-    int hot = 0, pleasant = 0, cold = 0, i, temp;
+    int hot = 0, pleasant = 0, cold = 0, i;
+    float temp;
 
-    for (i = 1; i <= SIZE; i++)
+    for (i = 1; i <= n; i++)
     {
 
         cin >> temp;
