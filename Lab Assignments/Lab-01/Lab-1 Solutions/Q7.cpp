@@ -2,6 +2,7 @@
 using namespace std;
 
 /*
+Q7:
 Use for loops to construct a program that displays a pyramid of Xs on the screen. The
 pyramid should look like this
 X
