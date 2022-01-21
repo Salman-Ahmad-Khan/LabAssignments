@@ -15,17 +15,16 @@ using namespace std;
 int main()
 {
 
-    // Reads size of numbersḥ and elements in the list
+    // Reads size of numbers and elements in the list
 
     cout << endl
          << "How many numbers you want to enter  ";
     int size;
     cin >> size;
     cout << "Okk, Input " << size << " elements now: ";
-    int i;
-    float arr[100];
-    float sum = 0.0, standard_devaition = 0.0, sum_squares = 0.0;
 
+    int i;
+    float arr[100], sum = 0.0, sum_squares = 0.0;
     for (i = 0; i < size; i++)
     {
         cin >> arr[i];
@@ -33,19 +32,18 @@ int main()
         sum_squares = sum_squares + arr[i] * arr[i];
     }
     float avg = sum / size;
-    // for (i = 0; i < size; i++)
-    // {
-    //     standard_devaition = standard_devaition + pow(arr[i] - avg, 2);
-    // }
-
-    /* Supposes the first element as maximum and minimum */
-    int max, min;
-    max = arr[0];
-    min = arr[0];
 
     /*
-      Finds maximum and minimum in all elements.
-     */
+     float standard_devaition = 0.0;
+     for (i = 0; i < size; i++)
+     {
+         standard_devaition = standard_devaition + pow(arr[i] - avg, 2);
+     }
+ */
+    // Supposes the first element as maximum and minimum
+    int max = arr[0], min = arr[0];
+
+    // Finds maximum and minimum in all elements.
     for (i = 0; i < size; i++)
     {
         /* If current element of array is greater than max */
@@ -73,7 +71,7 @@ int main()
          << "Range  " << range << endl
 
          //  << " Standar Devaition " << sqrt(standard_devaition / size) << endl;
-         << " Standar Devaition " << sqrt((sum_squares / size) - avg * avg) << endl;
+         << " Standard Devaition: " << sqrt((sum_squares / size) - avg * avg) << endl;
 
     return 0;
 }
