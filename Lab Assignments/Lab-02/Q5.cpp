@@ -138,7 +138,7 @@ Nonmethane hydrocarbons      0.25 grams/mile            0.31 grams/mile
             cout << "Looks like you're good " << endl;
     }
     else
-        cout << " This is not supposed to happen" << endl;
+        cout << "Error, please input the correct details." << endl;
 
     return 0;
 }
