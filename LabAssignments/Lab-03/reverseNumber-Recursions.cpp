@@ -19,6 +19,7 @@ void reverse(long int number)
 int main()
 {
 
+//program to reverse a number using recursions
     cout << endl
          << "Input a number: ";
      long int num;
