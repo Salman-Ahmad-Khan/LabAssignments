@@ -50,7 +50,7 @@ for (i = 0; i < terms; i++)
       if (key == fibonacci(i)) //found a match
       {
 
-         cout <<endl<< "Congratulations!\nThe entered number '"<<key<<"' is in the Fibonaci Series at '"<<i<<"th' position";
+         cout <<endl<< "Congratulations!\nThe entered number '"<<key<<"' is in the Fibonaci Series at index number, '"<<i+1<<"'";
          break;
       }
 
