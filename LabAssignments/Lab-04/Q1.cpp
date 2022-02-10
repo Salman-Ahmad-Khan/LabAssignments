@@ -6,20 +6,20 @@ bool checkPlaindrome(string s, int first_index, int last_index)
 {
 
     // base case
-    if (first_index >= last_index)//if first and last letter matches
+    if (first_index >= last_index) // if first and last letter matches
     {
         return true;
     }
 
     else
     {
-        if (s[first_index] != s[last_index])//if first and last letter mismatches
+        if (s[first_index] != s[last_index]) // if first and last letter mismatches
         {
             return false;
         }
         else
         {
-            return checkPlaindrome(s, first_index + 1, last_index - 1);//recurse to next pair of letters
+            return checkPlaindrome(s, first_index + 1, last_index - 1); // recurse to next pair of letters
         }
     }
 }
@@ -35,11 +35,6 @@ int main()
     second matches the next-to-last, and so on.
      */
 
-    // #ifndef ONLINE_JUDGE
-    // freopen("input.txt", "r",stdin);
-    // freopen("output.txt", "w",stdout);
-    // #endif
-
     cout << "Input any string without whitespaces: ";
     string s;
     getline(cin, s);
@@ -48,11 +43,11 @@ int main()
 
     if (checkPlaindrome(s, 0, len - 1)) // passing string s and first index and last index
     {
-        cout << " is a palindrome" << endl;
+        cout << "'" << s << "' is a palindrome" << endl;
     }
     else
     {
-        cout << " is not a palindrome" << endl;
+        cout << "'" << s << "' is not a palindrome" << endl;
     }
 
     return 0;
