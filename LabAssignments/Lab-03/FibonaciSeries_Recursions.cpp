@@ -2,7 +2,7 @@
 using namespace std;
 int fibonacci(int);
 void search(int);
-int i = 1, terms;
+int i = 0, terms;
 
 int main()
 {
@@ -14,7 +14,7 @@ int main()
    cout << "The '" << terms << "' terms of Fibonnaci Series: ";
 
   
-   while (i <= terms)
+   while (i < terms)
    {
       cout << fibonacci(i) << " "; // calling a function
       i++;
@@ -33,19 +33,19 @@ int main()
 int fibonacci(int num)
 {
    //base cases
-   if ((num == 1) || (num == 2))
+   if ((num == 0) || (num == 1))
    {
-      return (1);
+      return (num);
    }
    else
    {
-      return (fibonacci(num - 1) + fibonacci(num - 2));
+      return (fibonacci(num - 1) + fibonacci(num - 2));//recursively calling a function
    }
 }
 
 void search(int key)
 {
-for (i = 1; i <= terms; i++)
+for (i = 0; i < terms; i++)
    {
       if (key == fibonacci(i)) //found a match
       {
