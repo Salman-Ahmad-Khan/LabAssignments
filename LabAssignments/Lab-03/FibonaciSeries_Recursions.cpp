@@ -53,10 +53,9 @@ for (i = 0; i < terms; i++)
          cout <<endl<< "Congratulations!\nThe entered number '"<<key<<"' is in the Fibonaci Series at index number, '"<<i+1<<"'";
          break;
       }
-
-      if (i == terms) // loop has completed all iterations
+ }
+ if (i == terms) // loop has completed all iterations
       {
          cout <<endl<< "Sorry\nThe number you are searching("<<key<<") is nowhere in the Fibonaci Series"<<endl;
       }
-   }
 }
