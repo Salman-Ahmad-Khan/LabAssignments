@@ -30,6 +30,12 @@ int main()
         int c, d;
         cin >> c >> d;
 
+         if (!b || !d)
+        {
+            cout << "invalid fraction!,fraction denominator can't be zero(0)." << endl;
+            op = false;
+        }
+
         int N, D;
         switch (op)
         {

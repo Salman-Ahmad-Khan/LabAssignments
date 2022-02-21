@@ -27,8 +27,8 @@ int main()
     cin >> time1.hours >> time1.minutes >> time1.seconds;
 
     long total_seconds = time1.hours * 60 * 60 + time1.minutes * 60 + time1.seconds;
-    
-    cout << "total number of seconds represented by this time value: " << total_seconds << endl;
+
+    cout << "total number of seconds represented by this time value: " << total_seconds<<" seconds" << endl;
 
     return 0;
 }
