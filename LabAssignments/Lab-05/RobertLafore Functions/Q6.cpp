@@ -39,7 +39,7 @@ int main()
     struct time values. Keep the same functionality, but modify the program so that it uses
     two functions. The first, time_to_secs(), takes as its only argument a structure of type time, and returns the equivalent in seconds (type long). The second function,
     secs_to_time(), takes as its only argument a time in seconds (type long), and returns a
-    structure of type time
+    structure of type time.
     */
 
     cout << " Input the time in this format (Time 12:59:59),separate hours,minutes and seconds by whitespaces ";
